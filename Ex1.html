@@ -1,0 +1,132 @@
+<!DOCTYPE html>  <!-- Versão 5.0 do HTML -->
+
+
+<html lang= "pt-br">  <!-- define o idioma -->
+	<head> 
+		<meta charset="utf-8"/>
+		<meta name="author" content="Autor paginas"/>
+		<meta name="keywords" content="HTML 5, PHP, MySql"/>
+		<meta name="description" content="Programação de Html 5,
+		            	Conteúdo PHP, Conceito banco de dados"/>
+
+			<title> Minha páginas Web - Formulário  </title>
+
+	
+	</head>
+
+	<style>
+		#nomeN
+		{
+			margin-left: 53px;
+		}
+		#sobrenomeN
+		{
+			margin-left: 21px;
+		}
+		#senhaN
+		{
+			margin-left: 54px;
+			width:250px
+
+		}
+
+		#estadoN
+		{
+		 	margin-left: 10px;
+			width: 186px;
+		}
+		#estadoNN
+		{
+			width: 128px;
+		}
+		#datanascimentoN
+		{
+			margin-left: 10;
+
+		}
+
+		#datafinalN
+		{
+			margin-left: 10;
+
+		}
+
+		#valmaxN
+		{
+			margin-left: 10;
+			width: 120px;
+		}
+
+	</style>
+<!-- comentario      -->
+
+
+<!-- corpo da pagina -->
+
+<body>
+
+	<form method="POST" action="#" name="Cadastro">
+	<p>
+        <label> Imagem </label> <br>
+	<img src="leostronda.png" style="width: 355px;"></img>
+	</p>
+		Nome:
+	<input id="nomeN" type="text" name="cas_nome" placeholder="Digite seu nome!" required style="width:250px" autocomplete="off"/> <br><br>
+ 	<label> Sobrenome: </label> <!-- Label é tipo o titulo --> 
+		<input id="sobrenomeN" type="text" name="cas_sobrenome" style="width:250px" maxlength="20" placeholder="Digite o sobrenome!"/> <br><br>
+
+	<label> Senha: </label>
+		<input id="senhaN" type="password" name="cas_senha" placeholder="Digite sua senha" maxlength="20" > <br><br>
+
+
+	<label> Qual estado você mora? </label>
+		<input id= "estadoN" type="text" name="cas_estado" placeholder="Sigla do estado aonde mora" maxlength="2"/> <br> <br>
+
+
+	<label> Qual linguagem de programação você conhece? </label> <br>
+		<input type="checkbox" name="cas_asp" value="ASP" /> C#.NET <br>
+		<input type="checkbox" name="cas_php" value="PHP" /> PHP <br>
+		<input type="checkbox" name="cas_java" value="JAVA" /> JAVA <br><br>
+
+	<label> Estado civil </label> <br>
+		<input type="radio" name="cas_estadocivil" value="Casado" required /> Casado <br>
+		<input type="radio" name="cas_estadocivil" value="Solteiro" checked required/> Solteiro <br><br>
+
+
+
+	<label> Estado </label><br>
+	<select id="estadoNN" name="cas_estadoo" >
+		<option value="SP"> São Paulo </option>
+		<option value="RJ"> Rio de Janeiro </option>
+		<option value="MG"> Minas Gerais </option>
+		<option value="PA"> Para </option>	
+	</select><br>
+
+	<p> 
+		<label> Valor máximo: 11 </label><br>
+		<input type="number" min="1" max="11" name="cas_valmax" id="valmaxN" maxlength="2">
+	</p>
+	<p>
+		Data inicial: 01/08/2021 até a Data final: 31/08/2021 <br>
+		<input id="datafinalN" type="date" min="2021-08-01" max="2021-08-31">
+	</p>
+
+	<p>
+		<label> Data nascimento: </label> <br>
+		<input id="datanascimentoN" type="date" name="cas_nascimento" max="2021-12-30"/>
+	
+	</p>
+
+    Digite um comentario<br>
+    <textarea rows="8" cols="30"> </textarea> <br>
+
+	<input type="submit" value="Enviar" /> <br>
+
+	</form>
+
+ 
+</body>
+
+
+
+</html>
